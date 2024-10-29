@@ -5,10 +5,21 @@ import router from './Router'
 var app = createApp(App);
 
 app.config.globalProperties.$filters = {
-  parImpar(num){
-    return num % 2 == 0 ? "<h1 style='color:green'>Es par</h1>" : "<h1 style='color:red'>Es impar</h1>";
+  evaluarNumero(num) {
+    if (num % 2 == 0) {
+      return "<span style='color:green'>" + num + "</span>";
+    } else {
+      return "<span style='color:red'>" + num + "</span>";
+    }
+  },
+
+  getOperacion(numero, index){
+    return `${numero} * ${index}`;
+  },
+
+  getMultiplicacion(numero, index){
+    return numero * index;
   }
 }
-
 
 app.use(router).mount('#app')

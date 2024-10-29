@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeComponent from "./components/HomeComponent.vue";
 import CollaztComponent from "./components/CollaztComponent.vue";
+import TablaMultiplicar from "./components/TablaMultiplicar.vue";
 
 const myRoutes = [
   {
@@ -8,6 +9,10 @@ const myRoutes = [
   },
   {
     path:"/collazt", component: CollaztComponent
+  }
+  ,
+  {
+    path:"/tabla", component: TablaMultiplicar
   }
 
 ]

@@ -3,6 +3,7 @@
     <ul id="menu">
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/collazt">Conjetura de Collazt</router-link></li>
+      <li><router-link to="/tabla">Tabla de Multiplicar</router-link></li>
     </ul>
   </div>
 </template>
